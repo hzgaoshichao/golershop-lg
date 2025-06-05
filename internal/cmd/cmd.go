@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"context"
+
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
 	"github.com/gogf/gf/v2/os/gcmd"
@@ -47,6 +48,7 @@ var (
 
 			s.Use(service.Middleware().CheckLogin)
 
+			// 通过s.Group的分组路由方式定义一组路由注册，在其回调方法中注册的所有路由，都会带有其定义的分组路由前缀/。
 			s.Group("/", func(group *ghttp.RouterGroup) {
 				//钩子记录异步日志
 				group.Hook("/manage/*", ghttp.HookAfterOutput, service.LogAction().OperateLog)
@@ -60,7 +62,7 @@ var (
 					)
 
 				*/
-
+				// 通过group.Bind方法注册路由对象，该方法将会遍历路由对象的所有公开方法，读取方法的输入输出结构体定义，并对其执行路由注册。
 				group.Bind(
 					admin.Menu,
 					admin.UserAdmin,

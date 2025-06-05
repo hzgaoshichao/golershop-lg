@@ -82,63 +82,63 @@ database:
     ctxKeys: [ "RequestId" ]
 
   default:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   sys:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   account:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   pay:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   store:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   pt:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   order:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   shop:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   admin:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   cms:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   marketing:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   trade:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   invoicing:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   sns:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
   o2o:
-    link: "mysql:modulith_open:pwd@tcp(localhost:3306)/modulith_open?loc=Local&parseTime=true"
+    link: "mysql:shopsuite_user:mysql_password_0603@tcp(localhost:3306)/shopsuite_db?loc=Local&parseTime=true"
     debug: true
 
 # Redis 配置示例
@@ -147,7 +147,7 @@ redis:
   default:
     address: 127.0.0.1:6379
     db: 10
-    pass: dev_pwd_123
+    pass: redis_password_0603
 
     minIdle: "4"   # 允许闲置的最小连接数
     maxIdle: "8"  # 允许闲置的最大连接数(0表示不限制)
@@ -158,7 +158,7 @@ redis:
   cache:
     address: 127.0.0.1:6379
     db: 10
-    pass: dev_pwd_123
+    pass: redis_password_0603
 
     minIdle: "4"   # 允许闲置的最小连接数
     maxIdle: "8"  # 允许闲置的最大连接数(0表示不限制)
